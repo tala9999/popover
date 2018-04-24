@@ -20,6 +20,15 @@
   </p>
   <p>
     <button ion-button color="primary" menuToggle>Toggle Menu</button>
+    <button ion-button color="secondary" (click)="presentPopover($event)">Popover</button>
   </p>
 
 </ion-content>
+
+<ion-footer no-border>
+  <ion-toolbar>
+    <ion-buttons>
+      <button ion-button (click)="presentPopover($event)">Popover</button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>
